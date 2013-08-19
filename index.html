@@ -1,79 +1,244 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Dbic-web : " />
+    <meta charset="utf-8">
+    <title>DBIX::Class</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+    <link href="/assets/css/application.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Dbic-web</title>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/assets/js/html5shiv.js"></script>
+    <![endif]-->
+		<script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <link rel="shortcut icon" href="/assets/ico/favicon.png">
   </head>
 
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/dpetrov/dbic-web">View on GitHub</a>
-
-          <h1 id="project_title">Dbic-web</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/dpetrov/dbic-web/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/dpetrov/dbic-web/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Dbic-web maintained by <a href="https://github.com/dpetrov">dpetrov</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+    <nav class="navbar navbar-custom navbar-static-top" id="main-menu">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#the-team">The team</a></li>
+              <li><a href="#download">Download</a></li>
+              <li><a href="#documentation">Documentation</a></li>
+              <li><a href="#support">Support</a></li>
+            </ul>
+						<div class="social pull-right">
+							<a href="https://twitter.com/dbix_class" class="twitter" title="Find us on Twitter"></a>
+						</div>
+          </div>
+        </div>
+      </div>
+    </nav>
+	
+    <section id="home">
+      <div class="container">
+      </div>
+    </section>
     
+    <section id="about">
+      <div class="container">
+				<div class="info">
+					<h3>what is <strong>dbix:class</strong> ?</h3>
+					<hr/>
+					<p>DBIC is an extensible and flexible Object/Relational Mapper written in Perl. ORMs speed development, abstract data and make it 
+portable, allow you to represent your business rules through OO code and generate boilerplate code for CRUD operations.</p>
+				</div>
+				<ul>
+					<li>Write complex SQL queries in Perl code</li>
+					<li><a href="http://search.cpan.org/perldoc?DBIx::Class::Manual::Intro#Using_DBIx::Class::Schema::Loader" title="Generate classes">Generate classes</a> from your database structure</li>
+					<li>Write your classes <a href="http://search.cpan.org/perldoc?DBIx::Class::Manual::Intro#Setting_it_up_manually" title="Setting it up manually">manually</a></li>
+					<li>Get a <a href="http://search.cpan.org/perldoc?DBIx::Class::InflateColumn::DateTime" title="DateTime object">DateTime object</a> when you are dealing with a time based column</li>
+					<li>Get an <a href="http://search.cpan.org/perldoc?Catalyst::Plugin::AutoCRUD" title="AJAX Interface">Ajax interface</a> to your database - automatically</li>
+				</ul>
+				<div class="more-container">
+					<div class="more">
+						<div class="block-one">
+							<h1>Getting started</h1>
+							<p>If you would like to read more about DBIC we reccomend you start with the <a href="/#documentation" title="Documentation">documentation</a> and join <a href="/#community-support" title="Community">the community</a>.</p>
+						</div>
+						<div class="block-two">	
+						</div>
+						<div class="block-three">
+							<h3>Supporting <span>projects</span></h3>
+							<hr/>
+							<p>DBIC is an <a href="http://www.enlightenedperl.org/project.html">Enlightened Perl Organisation supported project</a>.</p>
+						</div>
+					</div>
+					<span class="monkey"><span></span></span>
+				</div>
+      </div>
+    </section>
+    
+    <section id="the-team">
+      <div class="container">
+				<ul class="members">
+					<li class="member matt">
+						<a href="http://search.cpan.org/~mstrout/" class="">
+							<img src="/assets/img/members/matt.jpg" width="224" height="224" alt="Matt" />
+							<span class="name">Matt T. Trout</span>
+							<em class="title">Project founder</em>
+						</a>
+						<p> Project founder and co-founder and Technical Director of <a href="http://www.shadowcat.co.uk/">Shadowcat Systems</a>. Matt can often be also seen at technical conferences talking enthusiastically about various things Perl.<br/><a href="http://search.cpan.org/~mstrout/">CPAN</a> <a href="http://www.shadowcat.co.uk/blog/matt-s-trout">Blog</a> <a href="mailto:m.trout@shadowcat.co.uk">Contact</a></p>
+					</li>
+					<li class="member peter">
+						<a href="http://search.cpan.org/~ribasushi/">
+							<img src="/assets/img/members/matt.jpg" width="224" height="224" alt="Matt" />
+							<span class="name">Peter Rabittson</span>
+							<em class="title">Current chainsaw</em>
+						</a>
+						<p> Current chainsaw delegate for the <var>0.08</var> series of DBIC releases.<br/><a href="http://search.cpan.org/~ribasushi/">CPAN</a></p>
+					</li>
+					<li class="member jess">
+						<a href="http://search.cpan.org/~jrobinson/">
+							<img src="/assets/img/members/matt.jpg" width="224" height="224" alt="Matt" />
+							<span class="name">Jess Robinson</span>
+							<em class="title">Chief documentator</em>
+						</a>
+						<p> Chief documentator and all round helper. Can be found at various Perl conferences.<br/><a href="http://desert-island.me.uk/~castaway/blog/">Blog</a> <a href="mailto:castaway@desert-island.me.uk">Contact</a> <a href="http://search.cpan.org/~jrobinson/">CPAN</a> <a href="http://www.amazon.co.uk/wishlist/1FIXSGHCHX81H">Wishlist</a></p>
+					</li>
+				</ul>
+				<div class="details">
+					<h2>About the team</h2>
+					<p>The DBIx::Class project was founded by Matt S. Trout. Since its humble beginnings, many others have joined, contributed,<br/> 
+and made releases. Below is a non-exhaustive list.If you have contributed to the project, but are not listed below, this is not on purpose!<br/>Contact us via any of the <a href="/#support">support channels</a> to have yourself added.</p>
+				</div>
+      </div>
+    </section>
+
+    <section id="download">
+      <div class="container">
+				<p><strong>DBIC</strong> is distributed via <a href="http://cpan.org/" title="CPAN">CPAN</a>, you can download a package from <a href="http://search.cpan.org/dist/DBIx-Class/" title="DBIx-Class">the distribution page</a> or use your 
+Perl distribution's <a href="http://www.cpan.org/misc/cpan-faq.html#How_install_Perl_modules" title="How to install Perl modules">install tools</a>.</p>
+				<a href="https://github.com/dbsrgits/DBIx-Class" class="btn_downloads">Downloads<br/>here</a>
+      </div>
+    </section>
+
+    <section id="documentation">
+      <div class="container">
+				<h1>Documentation</h1>
+				<p>The core documentation for DBIC can be found in POD, the standard for Perl documentation. This can be accessed through a 
+number of channels, including the perldoc utility and online on the CPAN website.</p>
+				<ul>
+					<li class="intro">
+						<span class="icon"></span>
+						<a href="http://search.cpan.org/perldoc?DBIx::Class" title="Introduction">Introduction</a>
+					</li>
+					<li class="tutorial">
+						<span class="icon"></span>
+						<a href="http://search.cpan.org/perldoc?DBIx::Class::Tutorial" title="Tutorial">Tutorial</a>
+					</li>
+					<li class="manual">
+						<span class="icon"></span>
+						<a href="http://search.cpan.org/perldoc?DBIx::Class::Manual" title="Manual">Manual</a>
+					</li>
+					<li class="map">
+						<span class="icon"></span>
+						<a href="http://search.cpan.org/perldoc?DBIx::Class::Manual::DocMap" title="Documentation map">Documentation map</a>
+					</li>
+				</ul>
+      </div>
+    </section>
+
+		<section id="documentation-extra">
+      <div class="container">
+				<h2>Documentation</h2>
+				<p>The core documentation for DBIC can be found in POD, the standard for Perl documentation. This can be accessed through a 
+number of channels, including the perldoc utility and online on the CPAN website.</p>
+				<table cellpadding="0" cellspacing="0" border="0">
+					<thead>
+						<tr>
+							<th>Title</th>
+							<th>Type</th>
+							<th>Date</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="http://rambles.bearcircle.net/2009/05/24/inflatecolumnfile-vs-inflatecolumnfs/" title="InflateColumn::File vs. InflateColumn::FS">InflateColumn::File vs. InflateColumn::FS</a></td>
+							<td>Article</td>
+							<td>May 24th, 2009</td>
+						</tr>
+						<tr>
+							<td><a href="http://blog.netcubed.de/2009/05/reports-with-dbic-and-postgres/" title="Reports with DBIC and Postgres">Reports with DBIC and Postgres</a></td>
+							<td>Article</td>
+							<td>May 23th, 2009</td>
+						</tr>
+						<tr>
+							<td><a href="http://blog.johngoulah.com/2009/05/versioning-with-dbic/" title="Using DBIx::Class to Version Your Schema">Using DBIx::Class to Version Your Schema</a></td>
+							<td>Article</td>
+							<td>May 17th, 2009</td>
+						</tr>
+						<tr>
+							<td><a href="http://www.shadowcat.co.uk/archive/conference-video/nwepm/catalyst-dbic/" title="Introduction to DBIx::Class and Catalyst">Introduction to DBIx::Class and Catalyst</a></td>
+							<td>Video</td>
+							<td>February 26th, 2009</td>
+						</tr>
+						<tr>
+							<td><a href="http://www.shadowcat.co.uk/catalyst/talks/postgresql-WEST-2008/-files/catalyst-dbic-pg.xul" title="Catalyst, DBIx::Class and Postgres">Catalyst, DBIx::Class and Postgres</a></td>
+							<td>Slides</td>
+							<td>?</td>
+						</tr>
+						<tr>
+							<td><a href="http://www.shadowcat.co.uk/archive/conference-video/yapc-eu-2008/dbic-masterclass/" title="DBIx:Class Masterclass">DBIx:Class Masterclass</a></td>
+							<td>Video</td>
+							<td>August 2008</td>
+						</tr>
+						<tr>
+							<td><a href="http://www.shadowcat.co.uk/catalyst/-talks/yapc-na-2008/dbix-masterclass.xul" title="DBIx:Class Masterclass">DBIx:Class Masterclass</a></td>
+							<td>Slides</td>
+							<td>?</td>
+						</tr>
+						<tr>
+							<td><a href="http://perlalchemy.blogspot.com/2006/10/tags-and-search-and-dbixclass.html" title="Tags and search and DBIx::Class">Tags and search and DBIx::Class</a></td>
+							<td>Article</td>
+							<td>October 26th, 2006</td>
+						</tr>
+					</tbody>
+				</table>
+      </div>
+    </section>
+		
+    <section id="support">
+      <div class="container">
+				<div class="data">
+					<a name="commercial-support"></a>
+					<h2>Commercial support</h2>
+					<p><a href="http://www.shadowcat.co.uk/" title="Shadowcat">Shadowcat systems</a> provide the DBIx::Class project with contributions in the form of code and hosting. Their team is highly experienced with DBIC and offer a <a href="http://www.shadowcat.co.uk/services/support/">consultancy service</a>.</p>
+					<a name="community-support"></a>
+					<h2>Community support</h2>
+					<p>There are a number of community support channels:</p>
+					<ul>
+						<li>The <a href="http://mibbit.com/chat/#dbix-class@irc.perl.org">#dbix-class</a> channel on <a href="http://www.irc.perl.org/faq.html">irc.perl.org</a></li>
+						<li>The <a href="http://lists.scsys.co.uk/mailman/listinfo/dbix-class">mailing list</a></li>
+						<li>The RT <a href="https://rt.cpan.org/Dist/Display.html?Queue=DBIx-Class">Bug Tracker</a></li>
+					</ul>
+				</div>
+      </div>
+    </section>
+
+		<footer>
+			<div class="container">
+				<p>Design: Evozon 2013</p>
+			</div>
+		</footer>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
 
   </body>
 </html>
