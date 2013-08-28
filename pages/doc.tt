@@ -1,0 +1,23 @@
+      <div class="container">
+        <h1>Documentation</h1>
+        <p>The core documentation for DBIC can be found in POD, the standard for Perl documentation. This can be accessed through a 
+number of channels, including the perldoc utility and online on the CPAN website.</p>
+        <ul>
+          <li class="intro">
+            <span class="icon"></span>
+            <a href="https://metacpan.org/module/DBIx::Class" title="Introduction">Introduction</a>
+          </li>
+          <li class="manual">
+            <span class="icon"></span>
+            <a href="https://metacpan.org/module/DBIx::Class::Manual" title="Manual">Manual</a>
+          </li>
+          <li class="intro">
+            <span class="icon"></span>
+            <a href="https://metacpan.org/module/DBIx::Class::Manual::Cookbook" title="Cookbook">Cookbook</a>
+          </li>
+          <li class="map">
+            <span class="icon"></span>
+            <a href="https://metacpan.org/module/DBIx::Class::Manual::DocMap" title="Documentation map">Documentation map</a>
+          </li>
+        </ul>
+      </div>
